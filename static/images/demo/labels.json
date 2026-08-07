@@ -1,1 +1,8 @@
-{}
+{
+  "2.jpg": ["dog", "labrador", "labrador retriever", "puppy", "portrait", "outdoor"],
+  "b1.jpg": ["beach", "tropical", "palm trees", "ocean", "turquoise water", "island", "boat", "vacation"],
+  "b2.jpg": ["beach", "sunset", "sunrise", "ocean", "waves", "sand", "sky", "clouds"],
+  "b3.jpg": ["beach", "city", "skyline", "buildings", "ocean", "crowd", "aerial", "coast"],
+  "d3.jpg": ["dog", "german shepherd", "belgian malinois", "studio", "portrait", "standing"],
+  "dog1.png": ["dog", "labrador", "labrador retriever", "beach", "mountains", "snow", "ocean", "standing"]
+}
