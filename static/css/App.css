@@ -53,6 +53,23 @@ header.page-header > h1 {
   font-size: 1rem;
 }
 
+.demo-badge {
+  display: inline-block;
+  margin: 12px 0 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #fff4cc;
+  color: #7a5c00;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #8a8f98;
+  padding: 20px 0;
+}
+
 .bar {
   width: 100%;
   max-width: 480px;
