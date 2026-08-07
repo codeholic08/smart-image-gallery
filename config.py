@@ -7,5 +7,5 @@ class Config:
     ES_INDEX = os.environ.get('ES_INDEX', '')
     LEX_BOT_ID = os.environ.get('LEX_BOT_ID', '')
     LEX_BOT_ALIAS_ID = os.environ.get('LEX_BOT_ALIAS_ID', '')
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', 'unset')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', 'unset')
