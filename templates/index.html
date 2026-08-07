@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/App.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body class="mainmain">
+    <div class="mainsection">
+        <div class="child">
+            <header class="page-header">
+                <h1>Gallery AI</h1>
+            </header>
+
+            <div class="bar">
+                <input id="searchbar" class="searchbar" type="text" title="Search">
+            </div>
+
+            <div class="buttons">
+                <button onclick="searchPhotos()" class="button">Search Image</button>
+                <button onclick="toggleUploadHandler()" class="button">Upload Image</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="upload" class="container">
+        <div class="upload_photo_handler" style="display: none;">
+            <h2>Upload Images</h2>
+            <input type="file" id="file" name="file">
+            <input type="text" id="labels" name="labels" placeholder="Custom labels (comma-separated)">
+            <button onclick="uploadPhotos()">Upload</button>
+        </div>
+    </div>
+
+    <div id="images" class="image-grid"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-search-service
+spec:
+  selector:
+    app: image-search
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: image-search-monitor
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: image-search
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 15s
