@@ -9,32 +9,33 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body class="mainmain">
-    <div class="mainsection">
-        <div class="child">
+    <div class="page">
+        <div class="mainsection">
             <header class="page-header">
                 <h1>Gallery AI</h1>
+                <p class="subtitle">Search your photos with natural language</p>
             </header>
 
             <div class="bar">
-                <input id="searchbar" class="searchbar" type="text" title="Search">
+                <input id="searchbar" class="searchbar" type="text" placeholder="Search for photos..." title="Search">
             </div>
 
             <div class="buttons">
-                <button onclick="searchPhotos()" class="button">Search Image</button>
+                <button onclick="searchPhotos()" class="button button-primary">Search Image</button>
                 <button onclick="toggleUploadHandler()" class="button">Upload Image</button>
             </div>
-        </div>
-    </div>
 
-    <div id="upload" class="container">
-        <div class="upload_photo_handler" style="display: none;">
-            <h2>Upload Images</h2>
-            <input type="file" id="file" name="file">
-            <input type="text" id="labels" name="labels" placeholder="Custom labels (comma-separated)">
-            <button onclick="uploadPhotos()">Upload</button>
+            <div id="upload" class="upload-section">
+                <div class="upload_photo_handler">
+                    <h2>Upload Images</h2>
+                    <input type="file" id="file" name="file">
+                    <input type="text" id="labels" name="labels" placeholder="Custom labels (comma-separated)">
+                    <button onclick="uploadPhotos()" class="button button-primary">Upload</button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div id="images" class="image-grid"></div>
+        <div id="images" class="image-grid"></div>
+    </div>
 </body>
 </html>

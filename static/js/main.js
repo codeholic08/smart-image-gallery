@@ -11,7 +11,7 @@ function searchPhotos() {
 
 function toggleUploadHandler() {
     var handler = document.querySelector('.upload_photo_handler');
-    handler.style.display = handler.style.display === 'none' ? 'block' : 'none';
+    handler.classList.toggle('open');
 }
 
 function uploadPhotos() {
